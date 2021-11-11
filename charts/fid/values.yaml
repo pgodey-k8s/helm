@@ -21,11 +21,11 @@ fid:
 
   ## License for FID
   ##
-  license: "<FID Cluster License>"
+  license: "{rlib}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ=="
   
   ## Detach from cluster on termination
   ##
-  detach: true
+  detach: false
   
   ## Deploy a readonly sts, that joins an existing FID cluster
   ##
@@ -40,9 +40,9 @@ fid:
   
 zk:
   external: true
-  connectionString: "zookeeper:2181"
-  clusterName: "fid-cluster"
-  ruok: "http://zookeeper:8080/commands/ruok"
+  connectionString: "demo-zk-zookeeper:2181"
+  clusterName: "demo-cluster"
+  ruok: "http://demo-zk-zookeeper:8080/commands/ruok"
   userName: "admin"
   password: "secret1234"
 
@@ -127,7 +127,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 3
   targetCPUUtilizationPercentage: 80
-#  targetMemoryUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
 
