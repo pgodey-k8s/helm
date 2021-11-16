@@ -2,13 +2,13 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: radiantone/fid
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7.3.18"
+  tag: ""
 
 fid:
   ## FID root user name
@@ -21,7 +21,7 @@ fid:
 
   ## License for FID
   ##
-  license: "{rlib}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ=="
+  license: "\{rlib\}x9TJ257Q3K3l0NeRyNrF3KHi3Lvc2tjRxMbZ3cbg53rS1taPwtPTzdbR6InhmNzcwMTX38ThoMDo186guNbQ1Y3T7LzY2crXu9DSppKeo32llpuThJKQ0sWrpI2fqZmXhY6WmZGeoXyfmKCQlKKYro6ypo6gm5mTgpGUmZSfoK/hzMrXu9DSvcrb2b/jyNbTj5KanJGjqYWlmJqZiJmQ1sLmwrvTzNyghQ=="
   
   ## Detach from cluster on termination
   ##
