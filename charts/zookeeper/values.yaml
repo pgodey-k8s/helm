@@ -95,7 +95,7 @@ persistence:
   ##   Azure, standard on GKE, AWS & OpenStack)
   ##
   # storageClass: "-"
-  storageClass: "default"
+  storageClass: "gp2"
   accessModes:
   - ReadWriteOnce
   size: 10Gi
