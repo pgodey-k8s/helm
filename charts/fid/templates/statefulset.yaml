@@ -176,14 +176,14 @@ spec:
         command: ["/bin/sh", "-c"]
         args: 
           - |
-            set -ex
+            #set -ex
             if [ $HOSTNAME != {{ template "fid.fullname" . }}-0 ]; then 
               export CLUSTER=join; 
             fi;
             ./run.sh
-            export FID_PASSWORD=null
-            export ZK_PASSWORD=null
-            export LICENSE=null
+            #export FID_PASSWORD=null
+            #export ZK_PASSWORD=null
+            #export LICENSE=null
             tail -f /dev/null
 {{- end }}
 {{- if .Values.metrics.enabled }}
