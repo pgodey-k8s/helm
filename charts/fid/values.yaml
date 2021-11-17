@@ -8,7 +8,7 @@ image:
   repository: radiantone/fid
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7.3.18"
+  tag: ""
 
 fid:
   ## FID root user name
